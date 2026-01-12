@@ -1,0 +1,96 @@
+# Análise de Riscos – Seleção de Endereço em Sistema de Mapeamento
+
+Este projeto é um estudo de caso fictício, criado exclusivamente para fins de aprendizado e portfólio.
+
+---
+
+## **Identificação**
+
+**ID:** Seleção de Endereço em Sistema de Mapeamento
+
+---
+
+## **Objetivo do Sistema**
+
+O sistema tem como objetivo localizar endereços fornecidos por clientes para abertura de ordens de serviço de iluminação pública, utilizando um sistema de mapeamento para identificar o ponto exato no mapa.
+
+O operador do sistema recebe o endereço informado pelo cliente e precisa confirmar se a localização exibida no mapa corresponde corretamente ao endereço solicitado.
+
+---
+
+## **Funcionalidade do Sistema**
+
+O operador informa manualmente os dados de endereço para que o sistema localize o ponto no mapa.
+
+**Campos disponíveis:**
+- Município *(obrigatório)*
+- Nome da rua/avenida *(obrigatório)*
+- Número *(opcional)*
+- CEP *(opcional)*
+
+---
+
+## **Objetivo do Teste**
+
+Garantir que o sistema localize corretamente o endereço informado, exiba o ponto correto no mapa e utilize dados atualizados e compatíveis com as informações fornecidas pelo cliente.
+
+---
+
+## **Resultado Esperado**
+
+Ao preencher os campos obrigatórios e clicar em **“Próximo”** (etapa de visualização do mapa), o sistema deverá:
+
+- Exibir o endereço corretamente no mapa  
+- Posicionar o marcador no local exato correspondente  
+- Garantir que a geolocalização esteja compatível com:
+  - Município informado  
+  - Nome da rua/avenida  
+  - Número e CEP (quando fornecidos)
+
+---
+
+## **Possíveis Problemas Identificados**
+
+Durante a análise da funcionalidade, foram identificados os seguintes riscos e possíveis bugs:
+
+### **1. Incompatibilidade entre CEP e Endereço**
+- O CEP informado não corresponde à rua inserida  
+- CEP desatualizado no sistema de mapeamento  
+
+**Risco:** localização incorreta ou falha na busca
+
+---
+
+### **2. Ambiguidade de Endereços**
+- Existência de duas ou mais ruas com o mesmo nome  
+- Sistema direciona para endereço incorreto  
+
+**Risco:** abertura de ordem de serviço no local errado
+
+---
+
+### **3. Localização Parcial**
+- Sistema não encontra a rua específica  
+- Exibe apenas o município no mapa  
+
+**Risco:** operador não consegue confirmar o ponto exato
+
+---
+
+### **4. Endereço com Nome Antigo**
+- Rua exibida com nomenclatura desatualizada  
+- Divergência entre mapa e informação atual do cliente  
+
+**Risco:** confusão operacional e retrabalho
+
+---
+
+## **Aprendizados**
+
+Durante a construção deste estudo de caso, foram trabalhados os seguintes pontos:
+
+- Análise de risco  
+- Pensamento crítico de QA  
+- Atenção a dados inconsistentes  
+- Preocupação com impacto operacional  
+- Identificação de possíveis falhas  

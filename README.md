@@ -4,10 +4,9 @@
 
 Repositório com estudos e projetos em Quality Assurance, cobrindo testes manuais, automação, API e documentação de qualidade. Cada pasta representa uma área de atuação com materiais práticos e aplicados.
 
----
-
 ## 📁 Estrutura do repositório
 
+```
 qa-portfolio/
 ├── 📁 manual-testing/
 │   ├── casos-de-teste/
@@ -19,9 +18,8 @@ qa-portfolio/
 │   ├── planos-de-teste/
 │   └── checklists/
 └── 📁 projects/
-└── estudos-de-caso/
-
----
+    └── estudos-de-caso/
+```
 
 ## 🔍 Áreas cobertas
 

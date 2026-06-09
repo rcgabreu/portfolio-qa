@@ -1,5 +1,9 @@
-# Estudo de Caso – Seleção de Endereço em Sistema de Mapeamento
+# 💼 Projetos e estudos de caso
 
-Este projeto é um estudo de caso fictício, criado para fins de aprendizado em Quality Assurance (QA).
+Projetos práticos integrando diferentes tipos de teste numa aplicação ou cenário real.
 
-O objetivo é analisar riscos, comportamentos esperados e possíveis falhas na funcionalidade de seleção de endereços utilizando um sistema de mapeamento.
+## Projetos disponíveis
+
+- 📁 **estudo-de-caso-mapeamento-endereco** — estudo de caso completo com análise e testes aplicados
+
+> 🌱 Novos projetos sendo adicionados conforme o aprendizado avança.
